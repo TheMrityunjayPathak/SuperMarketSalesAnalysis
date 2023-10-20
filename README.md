@@ -169,3 +169,5 @@ git clone https://github.com/TheMrityunjayPathak/SuperMarketSalesAnalysis.git
 - In conclusion, Super Market Sales Project revealed valuable insights into customer purchasing behavior and product performance, providing opportunities for data-driven strategies to enhance profitability and customer satisfaction.
 
 ## Link to the Notebook
+
+[Super Market Sales Analysis](https://www.kaggle.com/themrityunjaypathak/super-market-sales-analysis)
