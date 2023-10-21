@@ -148,10 +148,6 @@ git clone https://github.com/TheMrityunjayPathak/SuperMarketSalesAnalysis.git
 
 ![download](https://github.com/TheMrityunjayPathak/SuperMarketSalesAnalysis/assets/123563634/a6a72f27-d5a4-4a28-ac85-ce501fd68ad3)
 
-- Rating of Different Products in Each Month
-
-![download](https://github.com/TheMrityunjayPathak/SuperMarketSalesAnalysis/assets/123563634/05f98763-f7f1-4e75-976f-0902f4b79103)
-
 - Taxes on Different Product Lines
 
 ![download](https://github.com/TheMrityunjayPathak/SuperMarketSalesAnalysis/assets/123563634/9a8e2178-0468-4ad6-b249-1889480dbddf)
