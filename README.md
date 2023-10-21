@@ -2,7 +2,7 @@
 
 Hello Everyone,
 
-Here is My EDA Project based on Super Market Sales Dataset where I analyzed the Data by using Matplotlib and Seaborn.
+Here is My EDA Project based on Super Market Sales Analysis where I analyzed the Data by using Matplotlib and Seaborn.
 
 ## Dataset
 
