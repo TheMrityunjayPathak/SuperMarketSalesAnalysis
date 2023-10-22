@@ -100,6 +100,10 @@ git clone https://github.com/TheMrityunjayPathak/SuperMarketSalesAnalysis.git
 
 **Visualizing the Data**
 
+- Subplots of Distribution of Unit Price, Ratings and Gross Income
+
+![__results___37_0](https://github.com/TheMrityunjayPathak/SuperMarketSalesAnalysis/assets/123563634/c3c7bdf2-c531-4960-97b1-eadbe48a68bc)
+
 - Per Unit Price of Each Product Lines
 
 ![4dda0fb4-2fe9-461c-877f-6d309d329bea](https://github.com/TheMrityunjayPathak/SuperMarketSalesAnalysis/assets/123563634/ec10388d-9019-4e82-91b4-8cc4af67067e)
