@@ -14,6 +14,16 @@ I used Super Market Sales Dataset from Kaggle recorded for 3 Different Cities fo
 
 - The objective of this project is to analyze sales data to gain insights into customer purchasing behavior, product performance, and overall trends, of the supermarket business.
 
+## Streamlit Web App
+
+- For my Super Market Sales Analysis Project, I have created a Streamlit Web App for analyzing the Data in more interactive and user friendly way.
+
+- This Web App allows you to dig deep into the sales data, helping you answer critical questions in just few clicks.
+
+**Link to the Web App :** [Super Market Sales App](https://super-market-sales-analysis.streamlit.app/)
+
+![image](https://github.com/TheMrityunjayPathak/SuperMarketSalesAnalysis/assets/123563634/764c0fc8-b5b3-4a55-980b-809e83d2ef60)
+
 ## Table of Contents
 
 - [Setting up the Enviroment](#setting-up-the-enviroment)
