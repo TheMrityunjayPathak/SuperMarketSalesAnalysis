@@ -10,9 +10,9 @@ st.markdown("<div style='background-color:#219C90; border-radius:50px;'><h1 styl
 
 st.markdown("<h3 style='text-align:center; color:black;'>Super Market Sales Analysis</h3>",unsafe_allow_html=True)
 
-st.image("EDA\super-market.jpg",use_column_width=True)
+st.image("super-market.jpg",use_column_width=True)
 
-df1 = pd.read_csv("EDA\super-market.csv")
+df1 = pd.read_csv("super-market.csv")
 
 df2 = df1.drop("Invoice ID",axis=1)
 
