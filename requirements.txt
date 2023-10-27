@@ -3,4 +3,4 @@ numpy
 pandas
 matplotlib
 seaborn
-python 3.11.5
+python 3.11
