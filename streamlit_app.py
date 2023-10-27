@@ -1,29 +1,35 @@
+# Importing Libraries
 import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# Page Configuration 
 st.set_page_config(page_title="Exploratory Data Analysis",page_icon="🔍",layout="centered")
 
+# Title and Sub-Title
 st.markdown("<div style='background-color:#219C90; border-radius:50px;'><h1 style='text-align:center; color:white;'>Exploratory Data Analysis</h1></div>",unsafe_allow_html=True)
 
 st.markdown("<h3 style='text-align:center; color:black;'>Super Market Sales Analysis</h3>",unsafe_allow_html=True)
 
+# Image of Super Market
 st.image("super-market.jpg",use_column_width=True)
 
+# Data Pre-Processing 
 df1 = pd.read_csv("super-market.csv")
 
 df2 = df1.drop("Invoice ID",axis=1)
 
 df2['Date'] = pd.to_datetime(df2['Date'])
 
-df2['Year'] = df2['Date'].dt.year #Extracting Year from Date
+df2['Year'] = df2['Date'].dt.year # Extracting Year from Date
 
-df2['Month'] = df2['Date'].dt.month #Extracting Month from Date
+df2['Month'] = df2['Date'].dt.month # Extracting Month from Date
 
-df2['Day'] = df2['Date'].dt.day #Extracting Day from Date
+df2['Day'] = df2['Date'].dt.day # Extracting Day from Date
 
+# Problem Statement 
 st.header("Problem Statement")
 
 st.write("- The objective of this project is to analyze sales data to gain insights into customer purchasing behavior, product performance, and overall trends, of the supermarket business.")
@@ -33,12 +39,14 @@ data = st.toggle(label="Show Data")
 if data:
     st.dataframe(df1,hide_index=True)
 
+# Resources Link
 st.header("Links to the Resources")
 
 st.markdown("- [Link to the Dataset](https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales)")
 
 st.markdown("- [Link to the Notebook](https://www.kaggle.com/code/themrityunjaypathak/super-market-sales-analysis)")
 
+# About the Data Section
 st.header("About the Data")
 
 params = st.selectbox(label="Select any Parameter",options=["Shape","Columns","Description"],index=None)
@@ -54,6 +62,7 @@ else:
     st.write("Description of the Dataset :")
     st.dataframe(df1.describe(),use_container_width=True)
 
+# Null Values and DataType of Columns
 st.header("Null Values and DataType of Columns")
 
 col_dtype_nulls = st.selectbox(label="Select any Column",options=df2.columns,index=None,placeholder="Pleaes select a Column...")
@@ -112,6 +121,7 @@ else:
     st.write(f"DataType of **{col_dtype_nulls}** Column is",df2[col_dtype_nulls].dtype)
     st.write(f"Null Values in **{col_dtype_nulls}** Column is",df2[col_dtype_nulls].isna().sum())
 
+# Examine Categorical Columns
 st.header("Examine Categorical Columns")
 
 cat_col = st.selectbox(label="Select any Categorical Column",options=["Branch","City","Customer type","Gender","Payment","Product line","Quantity"],index=None)
@@ -140,6 +150,7 @@ else:
     st.write(f"Count of every unique value in **{cat_col}** column ↓")
     st.dataframe(df2[cat_col].value_counts(),use_container_width=True)
 
+# Data Visualization 
 st.header("Data Visualization")
 
 data_col = st.selectbox(label="Select any Chart Type",options=["Distribution Plot","Bar Chart","Line Plot","Count Plot"],index=None)
@@ -308,5 +319,6 @@ else:
         plt.title('Different Payment Methods Used by Different Cities')
         st.pyplot(fig)
 
+# Footer Section
 st.write("")
 st.markdown("<h3 style='text-align:center; color:black;'>Thanks 👏 for Visiting!</h3>",unsafe_allow_html=True)
