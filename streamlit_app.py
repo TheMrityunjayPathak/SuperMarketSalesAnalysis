@@ -5,6 +5,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# Light Mode
+st.markdown(
+    """
+    <style>
+        %s
+    </style>
+    """ % open("style.css").read(),
+    unsafe_allow_html=True
+)
+
 # Page Configuration 
 st.set_page_config(page_title="Exploratory Data Analysis",page_icon="🔍",layout="centered")
 
