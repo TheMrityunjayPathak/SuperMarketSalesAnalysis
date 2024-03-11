@@ -8,16 +8,6 @@ import seaborn as sns
 # Page Configuration 
 st.set_page_config(page_title="Exploratory Data Analysis",page_icon="🔍",layout="centered")
 
-# Light Mode
-st.markdown(
-    """
-    <style>
-        %s
-    </style>
-    """ % open("style.css").read(),
-    unsafe_allow_html=True
-)
-
 # Title and Sub-Title
 st.markdown("<div style='background-color:#219C90; border-radius:50px;'><h1 style='text-align:center; color:white;'>Exploratory Data Analysis</h1></div>",unsafe_allow_html=True)
 
