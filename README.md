@@ -12,7 +12,7 @@ I used Super Market Sales Dataset from Kaggle recorded for 3 Different Cities fo
 
 ## Problem Statement
 
-- The objective of this project is to analyze sales data and gain insights into customer purchasing behavior, product performance, and overall trends, of the supermarket business.
+- To analyze sales data and gain insights into customer purchasing behavior, product performance and overall trends of the supermarket business.
 
 ## Streamlit Web App
 
